@@ -1,0 +1,164 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mynd1{
+    background-image: url(assets/thelastofus.png);
+
+}
+.mynd2{
+    background-image: url(assets/louGirrafe.jpg);
+
+}
+.mynd3{
+    background-image: url(assets/EllieJoel.jpg);
+}
+.parralax{
+    min-height:100vh;
+    background-attachment: fixed;
+    background-size:cover;
+}
+#page1{
+    overflow-y:scroll;
+}
+#page2 {
+    /*display: grid;*/
+    
+}
+.col-3{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+.act{
+    padding: 4em;
+    border: 1px solid black;
+}
+
+.actors{
+    text-align: center;
+    padding-right: 2.5em;
+}
+.text{
+    text-align: center;
+    padding-top: 20em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/*-----pages--------*/
+.show{
+    /*left: 0;*/
+    display: grid;
+}
+.hide {
+    display: none;
+}
+.page{
+    
+    overflow: hidden;
+    /* grid layout */
+    /*display: grid;*/
+    /* postition fixed - class "show" viser pages*/
+    /*position: fixed;*/
+    left: -100vw;
+    transition: 1s ease-in-out;
+}
+/*-------------------------------------menu burger-------------------------*/
+
+.menu-wrapper {
+    position: fixed;
+    width: fit-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.burger-icon{
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    font-size: 3rem;
+    color: black;
+    z-index: 3;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.menu-wrapper:has(.sidebar:hover) .burger-icon, .burger-icon:hover {
+    color: white;
+}
+
+.sidebar {
+    position: relative;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 15rem;
+    background-color: black;
+    color: white;
+    padding: 4rem 1rem;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+}
+
+.burger-icon:hover + .sidebar,.sidebar:hover {
+    left: 0%;
+    box-shadow: 0 0 30px 5px black;
+    
+}
+
+.sidebar a {
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 1rem 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease-in-out, 
+        transform 0.15s ease-in-out;
+}
+
+.sidebar a:hover {
+    opacity: 1;
+    transform: translateX(0.3rem);
+    filter: drop-shadow(0 0 10px white);
+}
+/*-----------------------------------------------------------------*/
+
+.end{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5em;   
+    color: aliceblue;
+    background-color: rgba(0,0,0,0.6);
+}
+.backmynd{
+    background-image: url(assets/Joel.jpg);
+    background-size: cover;
+}
+#videoButton{
+    position:absolute;
+    bottom:1rem;
+    left:1rem;
+    padding:0.5rem 1rem 0.5rem 1rem;
+    border-radius:1rem;
+    background-color: rgba(100,100,100,0.9);
+    color:white;
+    border:1px solid lightgray;
+    z-index:1000;
+    transition: .3s ease-in-out all;
+    cursor: pointer;
+}
+
+#videoButton:hover{
+    background-color:white;
+    color:black;
+}
+.vid{
+    text-align: center;
+    padding: 2em;
+}
