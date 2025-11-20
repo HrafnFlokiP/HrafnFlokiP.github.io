@@ -5,15 +5,15 @@ body{
     box-sizing: border-box;
 }
 .mynd1{
-    background-image: url(assets/thelastofus.png);
+    background-image: url(thelastofus.png);
 
 }
 .mynd2{
-    background-image: url(assets/louGirrafe.jpg);
+    background-image: url(louGirrafe.jpg);
 
 }
 .mynd3{
-    background-image: url(assets/EllieJoel.jpg);
+    background-image: url(EllieJoel.jpg);
 }
 .parralax{
     min-height:100vh;
@@ -137,7 +137,7 @@ body{
     background-color: rgba(0,0,0,0.6);
 }
 .backmynd{
-    background-image: url(assets/Joel.jpg);
+    background-image: url(Joel.jpg);
     background-size: cover;
 }
 #videoButton{
