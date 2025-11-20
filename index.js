@@ -40,8 +40,8 @@ function setup(){
 
 let actors = {
     'ashly': [
-        'assets/Ashly.png',
-        'assets/ashley-johnson-at-nbc-universal-tca-summer-tour-in-beverly-hills_3.jpg'
+        'Ashly.png',
+        'ashley-johnson-at-nbc-universal-tca-summer-tour-in-beverly-hills_3.jpg'
     ]
 }
 
